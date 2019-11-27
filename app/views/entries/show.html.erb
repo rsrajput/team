@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subzone:</strong>
+  <%= @entry.subzone %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @entry.date %>
+</p>
+
+<p>
+  <strong>Upkeep:</strong>
+  <%= @entry.upkeep %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @entry.remarks %>
+</p>
+
+<p>
+  <strong>Signed by:</strong>
+  <%= @entry.signed_by %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>

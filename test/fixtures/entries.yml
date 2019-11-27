@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subzone: MyString
+  date: 2019-11-27
+  upkeep: MyString
+  remarks: MyText
+  signed_by: MyString
+
+two:
+  subzone: MyString
+  date: 2019-11-27
+  upkeep: MyString
+  remarks: MyText
+  signed_by: MyString

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subzone</th>
+      <th>Date</th>
+      <th>Upkeep</th>
+      <th>Remarks</th>
+      <th>Signed by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.subzone %></td>
+        <td><%= entry.date %></td>
+        <td><%= entry.upkeep %></td>
+        <td><%= entry.remarks %></td>
+        <td><%= entry.signed_by %></td>
+        <td><%= link_to 'Show', entry %></td>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry', new_entry_path %>
